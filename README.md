@@ -51,6 +51,30 @@ cp config/env.example.json config/env.json   # Linux/macOS 用 cp
 
 其他 pdf2zh 支持的引擎（google/deepl 等）同样可通过 env.json 切换。换 key 后可跑 `test_api.py` 验证连通性。
 
+## 示例
+
+`example/` 里放了一篇完整实测：MutingTokens（arXiv 2610.31235，12 页，Bing 引擎，78 秒）。
+
+| 文件 | 内容 |
+|---|---|
+| `MutingTokens-original.pdf` | 英文原文 |
+| `MutingTokens-mono.pdf` | 纯中文版（版面与原文一致） |
+| `MutingTokens-dual.pdf` | 双语对照版（原文页/译文页交替） |
+
+**正文页效果**（第 3 页：双栏、图 2、内联公式全部原位）：
+
+| 原文 | 译文 |
+|---|---|
+| ![原文第3页](example/img/p3-orig.png) | ![译文第3页](example/img/p3-zh.png) |
+
+**参考文献保持原文**（第 9 页：左栏结论正常翻译，右栏 REFERENCES 及条目保持英文）：
+
+| 原文 | 译文 |
+|---|---|
+| ![原文第9页](example/img/p9-orig.png) | ![译文第9页](example/img/p9-refs.png) |
+
+体检结果：页数一致（12/12），图片数量与位置 0 异常，矢量元素 0 差异，疑似漏翻 0 页。
+
 ## 已知坑
 
 | 包 | 钉死版本 | 原因 |
