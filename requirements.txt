@@ -1,0 +1,5 @@
+pdf2zh==1.9.11
+tencentcloud-sdk-python-tmt==3.0.1478
+onnxruntime==1.19.2
+bitstring==4.3.0
+pymupdf>=1.24

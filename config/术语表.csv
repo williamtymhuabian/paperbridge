@@ -1,0 +1,89 @@
+﻿term,译法,说明
+VLN,Vision-and-Language Navigation（VLN）,缩写一律保留不译
+VLA,Vision-Language-Action（VLA）,缩写一律保留不译
+VLM,Vision-Language Model（VLM）,缩写一律保留不译
+LLM,Large Language Model（LLM）,缩写一律保留不译
+MLLM,Multimodal Large Language Model（MLLM）,缩写一律保留不译
+NLOS,非视距（NLOS）,不要译成"非直线"
+LOS,视距（LOS）,
+ToF,飞行时间（ToF）,
+LiDAR,激光雷达（LiDAR）,
+RGB-D,RGB-D,不译
+IMU,惯性测量单元（IMU）,
+GPS,全球定位系统（GPS）,
+GNSS,全球导航卫星系统（GNSS）,
+UAV,无人机（UAV）,
+UAV-VLN,无人机视觉语言导航（UAV-VLN）,
+RIR,房间冲激响应（RIR）,"声学,room impulse response"
+TDOA,到达时间差（TDOA）,
+CRLB,克拉美-罗下界（CRLB）,Cramér-Rao lower bound
+SNR,信噪比（SNR）,
+SPL,路径长度加权成功率（SPL）,VLN 指标,不要译成"声压级"
+SR,成功率（SR）,
+NE,导航误差（NE）,
+R2R,Room-to-Room（R2R）,数据集名保留
+RxR,RxR,数据集名保留
+HM3D,HM3D,数据集名保留
+MP3D,MP3D,数据集名保留
+ObjectNav,ObjectNav,任务名保留
+ImageNav,ImageNav,任务名保留
+AirSim,AirSim,仿真器名保留
+Habitat,Habitat,仿真器名保留
+Unreal Engine,Unreal Engine,引擎名保留
+ARG,ARG,"作者自造指标,保留"
+embodied AI,具身智能,
+embodied agent,具身智能体,
+grounding,接地,语言接地;不要译成"基础/落地"
+affordance,可供性,
+waypoint,航点,
+trajectory,轨迹,
+pose,位姿,
+yaw,偏航,
+pitch,俯仰,
+roll,横滚,
+occlusion,遮挡,
+ablation,消融实验,
+baseline,基线,
+benchmark,基准,
+backbone,骨干网络,
+token,token,不译,不要译成"令牌/词元"
+patch,patch,图像块;不译
+attention,注意力,
+prompt,prompt,提示词;学术语境保留 prompt
+zero-shot,零样本,
+few-shot,少样本,
+generalization,泛化,
+distillation,蒸馏,
+policy,策略,
+rollout,轨迹采样,
+action chunking,动作分块,
+world model,世界模型,
+beamforming,波束成形,
+echolocation,回声定位,
+echo,回声,
+emission,发射,主动发声
+thermophone,热声发射器,
+microphone,麦克风,
+spectrogram,声谱图,
+spectral flatness,谱平坦度,
+impulse response,冲激响应,
+reverberation,混响,
+attenuation,衰减,
+air absorption,空气吸收,
+regret,后悔值（regret）,
+MAE,MAE,指标保留
+MSE,MSE,指标保留
+RMSE,RMSE,指标保留
+PSNR,PSNR,指标保留
+SSIM,SSIM,指标保留
+IoU,IoU,指标保留
+AUROC,AUROC,指标保留
+DTW,动态时间规整（DTW）,
+LoRA,LoRA,不译
+PEFT,参数高效微调（PEFT）,
+RL,强化学习（RL）,
+IL,模仿学习（IL）,
+MPPI,MPPI,不译
+CRLF,,（占位行勿删）
+Crazyflie,Crazyflie,硬件名保留
+Jetson,Jetson,硬件名保留
