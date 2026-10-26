@@ -1,19 +1,19 @@
-# Paper Translate
+# PaperBridge · 论文之桥
 
 整本学术 PDF 论文 → 中文，**保留原排版、公式与图片位置**，参考文献默认保持英文原文。
 
 底座是 [PDFMathTranslate](https://github.com/Byaidu/PDFMathTranslate)（pdf2zh 1.9.11，EMNLP 2025），外面封了四层：
 
 - **translate.py** — 单篇/批量翻译、断点续跑；一次产出**纯中文版**和**双语对照版**两份
-- **术语表** — `config/术语表.csv`（term,译法,说明），预置约 100 条科研常用词（VLN / VLA / NLOS / CRLB / SPL 等），翻译前渲染进 prompt，加一行即生效
+- **术语表** — `config/术语表.csv`（term,译法,说明），预置约 100 条科研常用词（VLN / VLA / NLOS / CRLB / DFD / kinodynamic 等），翻译前渲染进 prompt，加一行即生效
 - **参考文献保持原文** — 自动定位 REFERENCES 起始页：正文页正常翻、混合页按条目判定跳过、其后页整页保持英文（`--translate-refs` 可关）
 - **check.py 版面体检** — 自动核对页数、每页图片数量与位置（1pt 容差）、矢量元素差异、疑似漏翻页
 
 ## 安装
 
 ```bash
-git clone https://github.com/williamtymhuabian/paper-translate.git
-cd paper-translate
+git clone https://github.com/williamtymhuabian/paperbridge.git
+cd paperbridge
 python -m venv .venv
 .venv/Scripts/pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
 cp config/env.example.json config/env.json   # Linux/macOS 用 cp
@@ -91,10 +91,6 @@ pdf2zh 1.x 行为备忘：
 - 聚合文本块可能超 2000 字符且无换行，参考文献判定用"姓, 名缩写"模式全局计数（`refs_skip.py`）。
 - 翻译多线程进行，不要按文本顺序判断是否进入参考文献区（会误杀双栏页正文）。
 - HuggingFace 模型下载默认走 hf-mirror.com。
-
-## 实测
-
-MutingTokens（arXiv 2610.31235，12 页，Bing 引擎）：78 秒翻完，体检 0 异常；第 9 页左栏结论中文、右栏 REFERENCES 英文原样，第 10–12 页整页原文；人工抽查双栏结构、图、内联公式全部原位。
 
 ## License
 

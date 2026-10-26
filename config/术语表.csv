@@ -87,3 +87,13 @@ MPPI,MPPI,不译
 CRLF,,（占位行勿删）
 Crazyflie,Crazyflie,硬件名保留
 Jetson,Jetson,硬件名保留
+kinodynamic,动力学约束（kinodynamic）,UAV论文核心词
+waypoint chain,航路点链,路径规划术语
+jerk,加加速度,三阶导数，勿译为急动
+yaw rate,偏航角速度,勿译偏航率
+directional free-space distance,方向自由空间距离（DFD）,缩写DFD保留
+DFD,DFD,缩写保留不译
+Cruise-Seek,巡航-搜索（Cruise-Seek）,任务名保留
+clearance,净空,安全距离语境
+discrete action,离散动作,强化学习语境
+occupancy map,占据栅格图,机器人导航术语
